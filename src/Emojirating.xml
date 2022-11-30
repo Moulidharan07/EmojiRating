@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mxtechies.emojirating.Emojirating" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Emojirating</name>
+    <description>Rating will given with Emoji reactions</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="attribute" type="attribute">
+                <caption>Attribute</caption>
+                <description>Attribute connected to rating widget</description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <systemProperty key="Label"></systemProperty>
+            <systemProperty key="Name"></systemProperty>
+            <systemProperty key="Editability"></systemProperty>
+        </propertyGroup>
+        
+        <propertyGroup caption="Common">
+            <systemProperty key="Visibility"></systemProperty>
+            <systemProperty key="TabIndex"></systemProperty>
+        </propertyGroup>
+        <propertyGroup caption="Event">
+    <property key="buttonAction" type="action">
+        <caption>On Click</caption>
+        <description>Action to be performed when icon is clicked</description>
+    </property>
+        </propertyGroup>
+    </properties>
+</widget>

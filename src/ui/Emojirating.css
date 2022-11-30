@@ -1,0 +1,83 @@
+/*
+Place your custom CSS here
+*/
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    min-height: 10vh;
+    display: flex;
+}
+
+.btn:active{
+    transform:scale(.90);
+}
+
+#button{
+    font-size: 25px;
+    height:60px;
+    width:250px;
+}
+
+.popup-container{
+    top:-120%; left:0;
+    z-index: 1000;
+    background:transparent;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    height:100%;
+    width:100%;
+}
+.popup-container .popup{
+    background:transparent;
+    margin:10px;
+    padding:10px;  
+
+}
+
+.popup-container .popup h3{
+    color:#444;
+    padding:20px 40px;
+    font-size: 25px;
+}
+
+.popup-container .popup .btn{
+    margin:30px;
+    font-size: 20px;
+    height:40px;
+    width: 150px;
+}
+
+.popup-container .popup input[type="radio"]{
+    display: none;
+}
+
+.popup-container .popup .icons{
+    padding:10px;
+}
+
+.popup-container .popup .icons label{
+    font-size: 50px;
+    cursor: pointer;
+    opacity: .4;
+}
+
+.popup-container .popup .icons:hover label{
+    opacity: .2;
+}
+.popup-container .popup #btn1:checked ~ .icons label:nth-child(1),
+.popup-container .popup #btn2:checked ~ .icons label:nth-child(2),
+.popup-container .popup #btn3:checked ~ .icons label:nth-child(3),
+.popup-container .popup #btn4:checked ~ .icons label:nth-child(4),
+.popup-container .popup #btn5:checked ~ .icons label:nth-child(5),
+.popup-container .popup .icons label:hover{
+    opacity: 1;
+    font-size: 60px!important;
+}
